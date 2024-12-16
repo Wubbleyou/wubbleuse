@@ -10,7 +10,7 @@
             class="relative z-10"
         />
 
-        <slot v-else />
+        <slot />
     </div>
 </template>
 
