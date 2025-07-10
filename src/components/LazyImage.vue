@@ -6,6 +6,7 @@
         <img
             v-if="loadedImage"
             :src="loadedImage"
+            :alt="imageAlt"
             :class="imageClasses"
             class="relative z-10"
         />
@@ -23,6 +24,9 @@
                 required: true,
             },
             imageClasses: {
+                default: '',
+            },
+            imageAlt: {
                 default: '',
             },
         },
